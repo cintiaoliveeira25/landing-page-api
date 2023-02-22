@@ -4,20 +4,21 @@
   "info": {
     "singularName": "author",
     "pluralName": "authors",
-    "displayName": "author"
+    "displayName": "author",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
     "photo": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "name": {
       "type": "string",
@@ -32,7 +33,7 @@
       "type": "component",
       "repeatable": true,
       "component": "page.social-links",
-      "required": true
+      "required": false
     },
     "description": {
       "type": "text",
